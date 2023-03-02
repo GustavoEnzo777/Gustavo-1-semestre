@@ -1,4 +1,68 @@
+@font-face {
+    font-family: "Gustavo";
+    src: url(../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Enzo";
+    src: url(../assets/fonts/Courier_Prime/CourierPrime-Regular.ttf);
+}
+
+* {
+    /*reset*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*apenas para centralizar conteudos*/
+
+.layout-grid {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 3px solid green;
+}
+
 header {
-    background-color: red;
-    
+    background-color: #F9003D;
+    height: 60px;
+}
+
+
+/*flexbox no cabeçalho*/
+
+header .header-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header div nav a {
+    font-family: "Gustavo";
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+header nav {
+    display: flex;
+    width: 600px;
+    border: 2px solid white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main h1 {
+    font-family: "Gustavo";
+    font-size: 96px;
+    height: 230px;
+    width: 545px;
+}
+
+main h2 {
+    font-family: "Enzo";
+    color: #F9003D;
 }
