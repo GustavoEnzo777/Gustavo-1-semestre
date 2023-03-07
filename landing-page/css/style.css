@@ -26,6 +26,14 @@
     border: 3px solid green;
 }
 
+body {
+    background-color: #080324;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
 header {
     background-color: #F9003D;
     height: 60px;
@@ -58,15 +66,10 @@ header nav {
 main h1 {
     font-family: "Gustavo";
     font-size: 96px;
-    height: 230px;
     width: 545px;
 }
 
-main p {
-    font-family: "Enzo";
-    color: #F9003D;
-    font-size: 53px;
-}
+
 
 
 /*efeito de passar o mouse*/
@@ -89,6 +92,12 @@ main .banner {
     background-position: bottom;
 }
 
+main #bannerinfo p {
+    font-family: "Enzo";
+    color: #F9003D;
+    font-size: 53px;
+}
+
 main .banner-flex {
     display: flex;
     align-items: center;
@@ -100,7 +109,7 @@ main .banner #bannerinfo {
     flex-direction: column;
     justify-content: space-between;
     /* width: 550; */
-    border: 2px solid yellow;
+    margin-top: 100px;
 }
 
 div img {
@@ -111,11 +120,119 @@ div img {
 
 div h1 {
     border-bottom: 2px solid #FFAF00;
-    /* padding-bottom: 50px; */
-    margin-bottom: 50px;
+    padding-bottom: 30px;
+
 }
 
 
 /* div p {
     padding-top: 50px;
 } */
+
+body {
+    background-color: #080324;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 16px;
+}
+
+.sobre .sobre-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre .sobre-flex .sobrebox {
+    width: 500px;
+    border: 2px solid red;
+}
+
+.sobre .sobre-flex .participantes {
+    width: 640px;
+    border: 2px solid red;
+}
+
+.sobre h2 {
+    font-family: "Gustavo";
+    font-size: 64px;
+    margin-bottom: 60px;
+    color: #F9003D;
+    font-weight: normal;
+}
+
+.participantes h3 {
+    font-size: 24px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+.participantes h4 {
+    font-size: 64px;
+    color: #FFAF00;
+    font-family: "Gustavo"
+}
+
+.sobre .sobre-flex .participantes p {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+}
+
+#fotinho {
+    width: 491px;
+    height: 476px;
+}
+
+/* DESKTOP FIRST  */
+
+
+header #menu-hamburger {
+    display: none;
+}
+
+
+/* MObile MEDIA */
+
+@media screen and  (max-width: 767px) {
+ 
+main , footer {
+    display: none;
+}
+
+header nav {
+position: fixed;
+top: 60px;
+left: 0;
+max-width: 360px;
+width: 80vw;
+height: 100vh;
+
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #F9003D;
+
+}
+
+header nav a {
+    width: 150px;
+    margin-bottom: 30px;
+    border-left: 2px dashed white;
+    border-bottom: 2px dashed white;
+}
+
+header nav a:hover {
+    background-color: white;
+    border-radius: 5px;
+    color:#F9003D
+}
+
+
+
+
+
+header #menu-hamburger {
+    display: block;
+    opacity: 0.7;
+}
+}
