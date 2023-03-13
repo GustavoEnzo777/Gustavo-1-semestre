@@ -1,8 +1,10 @@
-
 /* Imports de fonts */
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
 
 /* Reset CSS */
-
 * {
     margin: 0;
     padding: 0;
@@ -17,10 +19,11 @@
     border: 2px solid red;
 }
 
+/* justify-content align items */
 .alinhamento-between-center {
-display: flex;
-justify-content: space-between;
-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -53,18 +56,49 @@ header nav {
     position: fixed;
     top: 60px;
     left: 0;
-    width: 80vw;
-    height: 100vh;
-    background-color: grey;
-
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between; */
+    padding-bottom: 20px;
+    width: 80vw;
+    height: calc(100vh - 60px);
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    }
+
+header .header-bottom nav > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    padding: 30px 0;
+    color: white;
+    font-size: 15px;
+    font-family: Inter;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #F9AA01;
+}
+
+header .header-bottom nav a:last-of-type {
+    border-bottom: none;
+}
+
+header .header-bottom nav .midias-sociais {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    justify-content: space-evenly;
+    /* border: 1px solid salmon; */
 }
 
 header .menu-usuarios {
     display: none;
 }
-
-
-
-
